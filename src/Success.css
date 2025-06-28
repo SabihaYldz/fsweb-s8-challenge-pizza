@@ -1,0 +1,62 @@
+.success-page {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  font-family: 'Barlow', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.success-header {
+  margin-bottom: 30px;
+}
+
+.logo-text {
+  font-size: 1.2rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #ce2829;
+  font-weight: 500;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.success-title {
+  font-size: 2rem;
+  color: #292929;
+  font-weight: bold;
+  font-family: 'Quattrocento', serif;
+}
+
+.success-details p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.success-details button {
+  margin-top: 30px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #ce2829;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.success-details button:hover {
+  background-color: #a02020;
+}
+
+.success-redirect {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.2rem;
+  color: #555;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+

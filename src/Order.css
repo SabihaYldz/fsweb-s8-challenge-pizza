@@ -1,0 +1,164 @@
+/* Order Sayfası Stili */
+
+/* Kırmızı Üst Banner */
+.order-header {
+  width: 1920px;
+  height: 207px;
+  background-color: #CE2829;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.order-header h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 48px;
+  color: white;
+  margin: 0;
+}
+
+/* Sayfa Yolu ("Ana Sayfa / Sipariş Oluştur") */
+.breadcrumb {
+  position: absolute;
+  left: 40px;
+  bottom: 15px;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+
+.order-container {
+  max-width: 650px;
+  margin: 2rem auto;
+  padding: 2rem 2.5rem;
+  background-color: var(--bej);
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+  border: 1px solid var(--acik-gri);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Başlıklar */
+h4 {
+  font-weight: 700;
+  color: var(--kirmizi);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Radio ve Select */
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.radio-label {
+  cursor: pointer;
+  padding: 0.4rem 1rem;
+  border: 2px solid var(--acik-gri);
+  border-radius: 10px;
+  user-select: none;
+}
+
+input[type="radio"]:checked + .radio-label {
+  background-color: var(--sari);
+  border-color: var(--kirmizi);
+  font-weight: 700;
+}
+
+/* Select */
+select {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: 1px solid var(--acik-gri);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Checkbox Malzeme Grubu */
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--acik-gri);
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Adet Seçme */
+.counter-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.counter-container button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--sari);
+  border: 1px solid var(--acik-gri);
+  font-weight: bold;
+}
+
+/* Fiyat Özeti */
+.summary-container {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.summary-container h5 {
+  color: var(--kirmizi);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.summary-container p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--koyu-gri);
+}
+
+/* Submit Butonu */
+button[type="submit"] {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 1rem;
+  background-color: var(--sari);
+  color: var(--koyu-gri);
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #e6b60f;
+}
+
+
+
+
