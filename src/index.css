@@ -17,11 +17,20 @@
   padding: 0;
 }
 
-html, body {
+html, body, #root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto Condensed', sans-serif;
   background-color: var(--bej);
   color: var(--koyu-gri);
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Ensure all elements use border-box */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 img {

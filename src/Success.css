@@ -1,62 +1,212 @@
+/* Sayfa arka planı */
 .success-page {
+  background-color: #CE2829;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Ortadaki ana kutu */
+.success-container {
+  width: 100%;
   max-width: 600px;
-  margin: 50px auto;
-  padding: 40px;
-  background-color: #fff;
-  border-radius: 16px;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  padding: 30px 20px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Logo Yazısı */
+.logo-text {
+  font-weight: 700;
+  font-style: italic;
+  color: #FDC913;
+  margin: 0 0 20px;
+  letter-spacing: 1px;
   font-family: 'Barlow', sans-serif;
-  color: #333;
+  font-size: 2.5rem;
+  line-height: 1.2;
   text-align: center;
 }
 
-.success-header {
-  margin-bottom: 30px;
+/* Başlık */
+.success-title {
+  font-size: 1.5rem;
+  color: #292929;
+  font-weight: 700;
+  font-family: 'Barlow', sans-serif;
+  margin: 0 0 10px;
+  line-height: 1.3;
+  text-align: center;
 }
 
-.logo-text {
+.success-subtitle {
   font-size: 1.2rem;
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #ce2829;
-  font-weight: 500;
-  margin-bottom: 8px;
+  color: #292929;
+  font-weight: 400;
+  margin: 0 0 30px;
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* Detay alanı */
+.success-details {
+  background-color: white;
+  padding: 30px;
+  border-radius: 6px;
+  text-align: left;
+  margin: 0 auto 30px;
+  max-width: 500px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Etiket + Değer satırları */
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.label, .value {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #5F5F5F;
+  margin: 0;
+}
+
+.label {
+  font-weight: 700;
+}
+
+.value {
+  font-weight: 400;
+}
+
+/* Buton */
+.success-actions {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.success-actions button {
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #292929;
+  background-color: #FDC913;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.success-title {
-  font-size: 2rem;
-  color: #292929;
-  font-weight: bold;
-  font-family: 'Quattrocento', serif;
+.success-actions button:hover {
+  background-color: #f8c200;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.success-details p {
-  font-size: 1.1rem;
-  margin: 10px 0;
+.success-actions button:active {
+  transform: translateY(1px);
 }
 
-.success-details button {
-  margin-top: 30px;
-  padding: 12px 28px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: white;
-  background-color: #ce2829;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.success-details button:hover {
-  background-color: #a02020;
-}
-
+/* Yönlendirme ekranı */
 .success-redirect {
   text-align: center;
-  margin-top: 100px;
-  font-size: 1.2rem;
-  color: #555;
-  font-family: 'Roboto Condensed', sans-serif;
+  padding: 20px;
+  font-size: 1rem;
+  color: #5F5F5F;
+  font-family: 'Barlow', sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
+/* Animasyonlar */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Düzenlemeler */
+@media (max-width: 768px) {
+  .success-page {
+    padding: 20px 15px;
+  }
+  
+  .logo-text {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .success-title {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+  
+  .success-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+  
+  .success-details {
+    padding: 20px 15px;
+  }
+  
+  .label, .value {
+    font-size: 0.95rem;
+  }
+  
+  .success-actions button {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 1.8rem;
+  }
+  
+  .success-title {
+    font-size: 1.2rem;
+  }
+  
+  .success-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .success-details {
+    padding: 15px 12px;
+  }
+  
+  .detail-row {
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px 0;
+  }
+  
+  .success-actions button {
+    width: 100%;
+    max-width: 100%;
+  }
+}
